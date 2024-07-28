@@ -10,18 +10,18 @@ Esta aplicação realiza o reconhecimento facial de colaboradores. Possui duas r
 ## Estrutura do Projeto
 
 .
-├── Dockerfile
-├── docker-compose.yml
-├── main.py
-├── requirements.txt
-├── routes
-│ ├── init.py
-│ ├── upload.py
-│ ├── recognize.py
-├── utils
-│ └── db_connection.py
-└── data
-└── images
+├── Dockerfile.
+├── docker-compose.yml.
+├── main.py.
+├── requirements.txt.
+├── routes.
+│ ├── init.py.
+│ ├── upload.py.
+│ ├── recognize.py.
+├── utils.
+│ └── db_connection.py.
+└── data.
+└── images.
 
 ## Requisitos
 
@@ -53,7 +53,7 @@ Substitua as variáveis em "environment" pelos dados reais que serão utilizados
 - DB_USER= //Usuário do Banco de Dados
 - DB_PASSWORD= //Senha do Banco de Dados
 - DB_NAME= //Nome da Base no Banco de Dados
-- SIMILARITY_THRESHOLD= //Similaridade do rosto cadastrado com o verificado, no tipo floar como 0.60
+- SIMILARITY_THRESHOLD= //Similaridade do rosto cadastrado com o verificado, no tipo float como 0.60
 ``` 
 
 ## Execução
@@ -68,13 +68,13 @@ A aplicação estará disponível em http://localhost:5000.
 
 ## Rotas da Aplicação
 1. Rota de Upload (/upload)
-    Método: POST
+    Método: POST.
     Descrição: Cadastra um colaborador com uma foto.
     Parâmetros:
-        - name: Nome do colaborador (string)
-        - registration: Matrícula do colaborador (string)
-        - cpf: CPF do colaborador (string)
-        - file: Arquivo de imagem do colaborador (file)
+        - name: Nome do colaborador (string);
+        - registration: Matrícula do colaborador (string);
+        - cpf: CPF do colaborador (string);
+        - file: Arquivo de imagem do colaborador (file).
 
 Exemplo de Requisição:
 ```yaml
@@ -86,10 +86,10 @@ curl -X POST http://localhost:5000/upload \
 ``` 
 
 2. Rota de Reconhecimento (/recognize)
-    Método: POST
-    Descrição: Reconhece um colaborador a partir de uma foto enviada.
-    Parâmetros:
-        - file: Arquivo de imagem (file)
+  Método: POST.
+  Descrição: Reconhece um colaborador a partir de uma foto enviada.
+  Parâmetros:
+    - file: Arquivo de imagem (file).
 
 Exemplo de Requisição:
 ```yaml
