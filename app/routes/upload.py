@@ -10,18 +10,18 @@ upload_bp = Blueprint('upload', __name__)
 @upload_bp.route('/upload', methods=['POST'])
 def upload():
     if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
+        return jsonify({'error': 'Nenhum arquivo de imagem encontrado.'}), 400
 
     file = request.files['file']
     if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
+        return jsonify({'error': 'Uma imagem não foi enviada na requisição.'}), 400
 
     name = request.form.get('name')
     registration = request.form.get('registration')
     cpf = request.form.get('cpf')
 
     if not all([name, registration, cpf, file]):
-        return jsonify({'error': 'Missing required fields'}), 400
+        return jsonify({'error': 'Um ou mais campos não foram enviados na solicitação.'}), 400
 
     #Lê a imagem em bytes
     image_bytes = file.read()
@@ -32,7 +32,7 @@ def upload():
     #Detecta e codifica o rosto na imagem
     face_encodings = face_recognition.face_encodings(image)
     if not face_encodings:
-        return jsonify({'error': 'No face found in the image'}), 400
+        return jsonify({'error': 'Não foi encontrado um rosto na imagem.'}), 400
 
     #Obtem a primeira codificação de rosto (assumindo uma única face por imagem)
     face_encoding = face_encodings[0]
@@ -57,4 +57,4 @@ def upload():
     finally:
         connection.close()
 
-    return jsonify({'message': 'File successfully uploaded'}), 200
+    return jsonify({'message': 'Colaborador cadastrado com sucesso!'}), 200
