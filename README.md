@@ -2,28 +2,28 @@
 
 ## Visão Geral
 
-Esta aplicação realiza o reconhecimento facial de colaboradores. 
+Esta aplicação realiza o reconhecimento facial de colaboradores. <br>
 
-Possui duas rotas principais:
+Possui duas rotas principais:<br>
 
-**/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.
-**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.
+**/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.<br>
+**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.<br>
 
 ## Estrutura do Projeto
 
-.
+.<br>
 ├── Dockerfile<br>
-├── docker-compose.yml
-├── main.py
-├── requirements.txt
-├── routes
-│ ├── init.py
-│ ├── upload.py
-│ ├── recognize.py
-├── utils
-│ └── db_connection.py
-└── data
-└── images
+├── docker-compose.yml<br>
+├── main.py<br>
+├── requirements.txt<br>
+├── routes<br>
+│ ├── init.py<br>
+│ ├── upload.py<br>
+│ ├── recognize.py<br>
+├── utils<br>
+│ └── db_connection.py<br>
+└── data<br>
+└── images<br>
 
 ## Requisitos
 
@@ -70,13 +70,13 @@ A aplicação estará disponível em http://localhost:5000.
 
 ## Rotas da Aplicação
 1. Rota de Upload (/upload)
-    Método: POST.
-    Descrição: Cadastra um colaborador com uma foto.
-    Parâmetros:
-        - name: Nome do colaborador (string);
-        - registration: Matrícula do colaborador (string);
-        - cpf: CPF do colaborador (string);
-        - file: Arquivo de imagem do colaborador (file).
+    Método: POST<br>
+    Descrição: Cadastra um colaborador com uma foto<br>
+    Parâmetros:<br>
+        - name: Nome do colaborador (string);<br>
+        - registration: Matrícula do colaborador (string);<br>
+        - cpf: CPF do colaborador (string);<br>
+        - file: Arquivo de imagem do colaborador (file).<br>
 
 Exemplo de Requisição:
 ```yaml
@@ -88,10 +88,10 @@ curl -X POST http://localhost:5000/upload \
 ``` 
 
 2. Rota de Reconhecimento (/recognize)
-  Método: POST.
-  Descrição: Reconhece um colaborador a partir de uma foto enviada.
+  Método: POST<br>
+  Descrição: Reconhece um colaborador a partir de uma foto enviada.<br>
   Parâmetros:
-    - file: Arquivo de imagem (file).
+    - file: Arquivo de imagem (file).<br>
 
 Exemplo de Requisição:
 ```yaml
