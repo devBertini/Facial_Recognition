@@ -6,8 +6,8 @@ Esta aplicação realiza o reconhecimento facial de colaboradores. <br>
 
 Possui duas rotas principais:<br>
 
-**/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.<br>
-**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.<br><br>
+- **/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.<br>
+- **/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.<br><br>
 
 ## Estrutura do Projeto
 
