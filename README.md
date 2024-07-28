@@ -2,26 +2,28 @@
 
 ## Visão Geral
 
-Esta aplicação realiza o reconhecimento facial de colaboradores. Possui duas rotas principais:
+Esta aplicação realiza o reconhecimento facial de colaboradores. 
 
-1. **/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.
-2. **/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.
+Possui duas rotas principais:
+
+**/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.
+**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.
 
 ## Estrutura do Projeto
 
 .
-├── Dockerfile.
-├── docker-compose.yml.
-├── main.py.
-├── requirements.txt.
-├── routes.
-│ ├── init.py.
-│ ├── upload.py.
-│ ├── recognize.py.
-├── utils.
-│ └── db_connection.py.
-└── data.
-└── images.
+├── Dockerfile<br>
+├── docker-compose.yml
+├── main.py
+├── requirements.txt
+├── routes
+│ ├── init.py
+│ ├── upload.py
+│ ├── recognize.py
+├── utils
+│ └── db_connection.py
+└── data
+└── images
 
 ## Requisitos
 
