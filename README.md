@@ -69,14 +69,14 @@ docker-compose up --build
 A aplicação estará disponível em http://localhost:5000.
 
 ## Rotas da Aplicação
-1. Rota de Upload (/upload)
+1. Rota de Registro (/upload)<br><br>
     Método: POST<br>
     Descrição: Cadastra um colaborador com uma foto<br>
     Parâmetros:<br>
-        - name: Nome do colaborador (string);<br>
-        - registration: Matrícula do colaborador (string);<br>
-        - cpf: CPF do colaborador (string);<br>
-        - file: Arquivo de imagem do colaborador (file).<br>
+      - name: Nome do colaborador (string);<br>
+      - registration: Matrícula do colaborador (string);<br>
+      - cpf: CPF do colaborador (string);<br>
+      - file: Arquivo de imagem do colaborador (file).<br>
 
 Exemplo de Requisição:
 ```yaml
@@ -87,7 +87,7 @@ curl -X POST http://localhost:5000/upload \
   -F 'file=@path/to/image.jpg'
 ``` 
 
-2. Rota de Reconhecimento (/recognize)
+2. Rota de Reconhecimento (/recognize)<br><br>
   Método: POST<br>
   Descrição: Reconhece um colaborador a partir de uma foto enviada.<br>
   Parâmetros:
