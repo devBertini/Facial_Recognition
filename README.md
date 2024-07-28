@@ -7,7 +7,7 @@ Esta aplicação realiza o reconhecimento facial de colaboradores. <br>
 Possui duas rotas principais:<br>
 
 **/upload**: Rota para cadastro de colaboradores com suas respectivas fotos.<br>
-**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.<br>
+**/recognize**: Rota para reconhecimento de colaboradores a partir de uma foto enviada.<br><br>
 
 ## Estrutura do Projeto
 
@@ -25,22 +25,21 @@ Possui duas rotas principais:<br>
 └── data<br>
 └── images<br>
 
-## Requisitos
+## Requisitos Host
 
-- Python 3.8+
-- Docker
-- Docker Compose
+- **[Docker](https://www.docker.com/)**
+- **[Docker Compose](https://docs.docker.com/compose/)**
 
 ## Dependências
 
 As dependências da aplicação estão listadas no arquivo `requirements.txt`:
 
-- Flask
-- PyMySQL
-- face_recognition
-- numpy
-- opencv-python-headless
-- Werkzeug
+- **[Flask](https://flask.palletsprojects.com/)**
+- **[PyMySQL](https://pypi.org/project/PyMySQL/)**
+- **[face_recognition](https://pypi.org/project/face-recognition/)**
+- **[numpy](https://numpy.org/)**
+- **[opencv-python-headless](https://pypi.org/project/opencv-python-headless/)**
+- **[Werkzeug](https://werkzeug.palletsprojects.com/)**
 
 ## Configuração
 
@@ -59,9 +58,8 @@ Substitua as variáveis em "environment" pelos dados reais que serão utilizados
 ``` 
 
 ## Execução
-Executar com Docker Compose
+Executar com Docker Compose através do comando:
 
-Construir e executar a aplicação:
 ```yaml
 docker-compose up --build
 ``` 
