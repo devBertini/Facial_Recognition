@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from db import get_db_connection
+from app.utils.db_connection import get_db_connection
 import pymysql
 import pymysql.cursors
 import face_recognition
