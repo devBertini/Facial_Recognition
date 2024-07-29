@@ -14,16 +14,17 @@ Possui duas rotas principais:<br>
 .<br>
 ├── Dockerfile<br>
 ├── docker-compose.yml<br>
-├── main.py<br>
 ├── requirements.txt<br>
-├── routes<br>
-│ ├── init.py<br>
-│ ├── upload.py<br>
-│ ├── recognize.py<br>
-├── utils<br>
-│ └── db_connection.py<br>
-└── data<br>
-└── images<br>
+├── .gitignore<br>
+├── README.md<br>
+├── LICENSE<br>
+├── app<br>
+│ ├── main.py<br>
+│ ├── routes<br>
+│ │ ├── upload.py<br>
+│ │ ├── recognize.py<br>
+│ ├── utils<br>
+│ │ └── db_connection.py<br>
 
 ## Requisitos Host
 
